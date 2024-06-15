@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scripting coder</title>
+</head>
+<body>
+   <div class="login-form">
+    <h1>Login form</h1>
+    <form method="post">
+    <label for="email" class="label-p">Email:</label>
+    <input type="email" name="email" id="email" class="input-email">
+    <br><br>
+    <label for="password" class="label-p">Password:</label>
+    <input type="password" name="password" id="password" class="input-password">
+    <br><br>
+    <input type="submit" class="submit-btn">
+   </form>
+   </div>
+</body>
+<script>
+    let button = document.querySelector('.submit-btn');
+    button.addEventListener('click', () => {
+            alert('submitted successfully');
+    })
+</script>
+</html>
